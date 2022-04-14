@@ -11,13 +11,20 @@ body {
 }
 
 .canvas {
-  width:80vw;
-  height:70vh;
+  width:600px;
+  height:600px;
   background-color: white;
   border-radius: 15px;
   box-shadow:
     0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.strokeCursor {
+  cursor: url('https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/0.5x/external-pen-graphic-design-and-photography-smashingstocks-hand-drawn-black-smashing-stocks-3.png'), auto;
+}
+.fillCursor {
+  cursor: url('https://img.icons8.com/ios-filled/1x/fill-color.png'), auto;
 }
 
 .controls {
@@ -42,7 +49,7 @@ body {
 }
 
 .controls .controls__btns {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .controls__btns button {
@@ -61,6 +68,11 @@ body {
   text-transform:uppercase;
   font-weight: 800;
   font-size:12px;
+  transition: background-color .3s ease-in-out;
+}
+
+.controls__btns button:hover {
+  background-color: rgba(0,0,0,.2);
 }
 
 .controls__btns button:active {
