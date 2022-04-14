@@ -52,7 +52,7 @@ function onMouseMove(event) {
   const x = event.offsetX;
   const y = event.offsetY;
   if (!painting) {
-    //ctx.beginPath();
+    ctx.beginPath();
     ctx.moveTo(x, y);
   } else {
     ctx.lineTo(x, y);
@@ -92,6 +92,9 @@ function handleModeClick() {
 
 function handleColorClick(event) {
   const color = event.target.style.backgroundColor;
+  const colors = event.target.parentElement.children
+  Array.from(colors).forEach((color) => color.classList.remove("selected"));
+  event.target.classList.add("selected");
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
 }
