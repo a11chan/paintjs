@@ -27,6 +27,20 @@ body {
   align-items: center;
 }
 
+.controls__status {
+  margin-bottom:10px;
+}
+
+.controls__status li {
+  display:grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+.controls__status li input {
+  text-align: center;
+}
+
 .controls .controls__btns {
   margin-bottom: 30px;
 }
@@ -54,7 +68,7 @@ body {
 }
 
 .controls .controls__range {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .controls .controls__range input {
