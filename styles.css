@@ -27,10 +27,10 @@ main {
 }
 
 .strokeCursor {
-  cursor: url('https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/0.5x/external-pen-graphic-design-and-photography-smashingstocks-hand-drawn-black-smashing-stocks-3.png'), auto;
+  cursor: url('./imgs/strokeCursor.png'), auto;
 }
 .fillCursor {
-  cursor: url('https://img.icons8.com/ios-filled/1x/fill-color.png'), auto;
+  cursor: url('./imgs/fillCursor.png'), auto;
 }
 
 .controls {

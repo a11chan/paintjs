@@ -23,7 +23,7 @@ if (canvas) {
   canvas.addEventListener("mouseenter", onMouseEnter);
   canvas.addEventListener("mousedown", startPainting);
   canvas.addEventListener("mouseup", stopPainting);
-  // canvas.addEventListener("mouseleave", stopPainting);
+  // canvas.addEventListener("mouseleave", stopPainting); //마우스 커서가 캔버스를 나갔다가 들어와도 이어그릴 수 있게 하기 위해 주석 처리
   canvas.addEventListener("click", handleCanvasClick);
   canvas.addEventListener("contextmenu",handleCM);
 }
